@@ -35,3 +35,9 @@ router: jqrouter.map({
   "#/{hashUrl}": "useHashUrl"
 })
 ```
+
+### Router methods
+
+```javascript
+var queryParam = this.router().getQueryParam("queryParam");
+```
