@@ -15,5 +15,10 @@ Primitive type variables are said to be accessed by their values. Whereas while 
 
 ### Copying Values
 
-![Copying Primitive Values](images/copying_primitive_variables.png)
+Copying Primitive Values | Copying reference Values
+                      ---|---
+![Primitive](images/copying_primitive_variables.png) | ![Reference](images/copying_reference_values.png)
+
+
+
 
