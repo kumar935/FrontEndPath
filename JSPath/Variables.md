@@ -72,4 +72,40 @@ console.log(arr instanceof Array);
 console.log(pattern instanceof RegExp);
 ```
 
+### Execution Context and Scope
+
+- An Execution context has a __Variable Object__ associated with it which contains all its properties and methods (variables and functions)
+- When code execution ___flows___ into an execution context it gets pushed onto a context stack. After the function has finished executing the stack is popped, the context is destroyed along with it all of its variables and functions.
+- When code is executed in a context a __Scope Chain__ of variable objects is created.
+- When the execution context is that of a function, the variable object is the __Activation Object__ which ___starts with___ a single defined variable `arguments`.
+
+### Scope Chain Augmentation
+
+- It describes mainly the use of `with`. But MDN says don't use it. This [SO link](http://stackoverflow.com/a/1931195/3248247) explains that well.
+
+### Non Block-Level Scopes | Scopes whose variables are accessible outside of it
+
+- if else statement:
+```javascript
+if(true){
+  var foo = "bar";
+}
+console.log(foo); //"bar"
+```
+
+- for loop
+```javascript
+for(var i = 0; i<10; i++){
+  console.log(i);
+}
+console.log(i); // 10
+```
+
+> Declare variable without var, goes into the global context.
+
+### Garbage Collection
+
+- Unlike C++, Java, Javascript does this for you. 
+- Mark and sweep and reference counting methods. Pretty interesting to know but don't seem all that useful for practical purposes.
+
 
