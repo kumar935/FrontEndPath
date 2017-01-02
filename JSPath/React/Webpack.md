@@ -11,6 +11,8 @@
   
 - A great looking [react-starter-pack][4]. Give this a study.
 
+- shave off 100kb from bundle.js [SO Link][5]
+
 
 
 
@@ -19,3 +21,4 @@
 [2]: https://github.com/webpack/extract-text-webpack-plugin
 [3]: https://github.com/webpack/extract-text-webpack-plugin/issues/209
 [4]: https://github.com/kriasoft/react-starter-kit
+[5]: http://stackoverflow.com/questions/25384360/how-to-prevent-moment-js-from-loading-locales-with-webpack/25426019#25426019
