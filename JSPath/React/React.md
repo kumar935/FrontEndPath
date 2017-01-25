@@ -5,7 +5,7 @@
 - Async rendering of components. Very Useful. [SO Link](http://stackoverflow.com/questions/27192621/reactjs-async-rendering-of-components)
 - What if I don't want to re-render every time setState is called? Enter, `shouldComponentUpdate`: [SO Link](http://stackoverflow.com/a/24719289/3248247)
 
-###### setState after ajax call?
 
-- It says here that's a bad idea: [article](https://hashnode.com/post/why-is-it-a-bad-idea-to-call-setstate-immediately-after-componentdidmount-in-react-cim5vz8kn01flek53aqa22mby)
-- Component not remounting on path param change: [SO link](http://stackoverflow.com/questions/32261441/component-does-not-remount-when-route-parameters-change)
+
+- __`setState` after ajax call?__: It says here that's a bad idea: [article](https://hashnode.com/post/why-is-it-a-bad-idea-to-call-setstate-immediately-after-componentdidmount-in-react-cim5vz8kn01flek53aqa22mby)
+- __Component not remounting on path param change__: [SO link](http://stackoverflow.com/questions/32261441/component-does-not-remount-when-route-parameters-change)
