@@ -2,6 +2,6 @@
 
 Accordion thing:
 
-<click-here>
+<details>
 ACCORDION!!! SO this is possible in markdown!!
-</click-here>
+</details>
