@@ -13,7 +13,7 @@ So ways to export and import:
 
 __Export__: `export default something;`. `something` can be a function and object or a variable, or an expression like {var1, var2}.
 
-__Import__: `import something from 'module-name'. 
+__Import__: `import something from 'module-name'.`
 
 
 2.
@@ -25,7 +25,7 @@ __Import__: `import {something, somethingElse as moreConvenientName} from 'modul
 
 3.
 
-__Export__: whatever
+__Export__: `whatever`
 
 __Import__: `import 'module-name';`
 
