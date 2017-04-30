@@ -40,7 +40,7 @@ More ways to export/import. (Wonder how these can be used)
 
 `import defaultMember, {otherMember, anotherMember} from 'module-name';`
 
-### # CSS Combinators
+### # CSS Combinators [SO source](http://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean)
 
 CSS combinators
 
