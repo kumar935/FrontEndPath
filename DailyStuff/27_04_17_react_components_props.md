@@ -1,4 +1,4 @@
-## 27th April 17 | react props, es6 import
+## 27th April 17 | react props
 
 
 ### What does this mean: `<Slider {...settings}/>`? React props | Components | Elements
