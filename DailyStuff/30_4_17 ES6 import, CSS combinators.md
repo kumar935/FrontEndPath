@@ -1,4 +1,4 @@
-# 30th April 17' | ES6 import, export
+# 30th April 17' | ES6 import, export | CSS Combinators
 
 ## Ok so import export. Let's remember all the types.
 
@@ -39,6 +39,17 @@ More ways to export/import. (Wonder how these can be used)
 `export {import1 as name1, import2 as name2} from 'wherever';`
 
 `import defaultMember, {otherMember, anotherMember} from 'module-name';`
+
+### # CSS Combinators
+
+CSS combinators
+
+```css
+ul li     // inside  |   Descendant selector           |   all lis inside the ul
+ul > li   // inside  |   Child combinator selector     |   immediate li inside the ul
+ul + ul   // outside |   Adjacent combinator selector  |   the next ul after the ul sharing same parent
+ul ~ ul   // outside |   General combinator selector   |   all the next uls after the ul sharing same parent
+``` 
 
 
 
