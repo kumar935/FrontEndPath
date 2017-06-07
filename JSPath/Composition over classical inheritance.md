@@ -8,7 +8,7 @@ A compilation of videos/articles explaining why it's better to not use classical
 
 These articles go a bit deeper:
 
-- [The 2 pillars of javascript pt. 1: Do we really need inheritance?](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)
+- [The 2 pillars of javascript pt. 1: Prototypal OO](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)
 - [The 2 pillars of javascript pt. 2: Functional Programming](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)
 
 The 3 article series by Kyle Simposon would also refresh concepts of prototypes:
