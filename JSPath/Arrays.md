@@ -23,7 +23,11 @@ function containsOneOddNumber(element, index, array){
 ### Ways to add items of array:
 ```javascript
 [1,2,3,4,5].reduce(function(sum,next){ return sum + next }); //will return 15
+//So ways to create new Array of certain length
+var arr1 = Array.apply(0, new Array(6)).map((v,i) => i); //[0, 1, 2, 3, 4, 5]
+var arr2 = new Array(5).fill(0); //[0,0,0,0,0]
 ```
+
 
 ### reduceRight
 ```javascript
@@ -33,9 +37,26 @@ function containsOneOddNumber(element, index, array){
 
 ### More array methods
 ```javascript
-//So ways to create new Array of certain length
-var arr1 = Array.apply(0, new Array(6)).map((v,i) => i); //[0, 1, 2, 3, 4, 5]
-var arr2 = new Array(5).fill(0); //[0,0,0,0,0]
+//push, unshift & pop, shift
+[1,2,3,4,5].push(100); //output = 6 (length of final array = [1,2,3,4,5,100])
+[1,2,3,4,5,100].unshift(30); //output = 6 (length of final array = [30,1,2,3,4,5,100])
+
+[30,1,2,3,4,5,100].pop(); //output = 100 final array = [30,1,2,3,4,5]
+[30,1,2,3,4,5].shift(); //output = 30 final array = [1,2,3,4,5]
+
+
+//Array.from
+console.log("================", "Array.from");
+var someNumbers = Array.from({length: 10}, (v,i) => i);
+var nameLetters = Array.from("animesh"); //can also get array from Set, Map
+console.log(someNumbers, nameLetters);
+
+//Array.isArray
+console.log("================", "Array.isArray");
+console.log(Array.isArray(someNumbers));//true
+console.log(Array.isArray({"0": "abc"}));//false
+console.log(Array.isArray({0: "abc"}));//false
+console.log(Array.isArray(["abc"]));//true
 
 //fill
 [1,2,3,4,5].fill("yo"); //["yo","yo","yo","yo","yo"]
@@ -61,25 +82,5 @@ console.log(arr.splice(2,3), arr); //outputs spliced part [3,4,5] arr becomes [1
 var arr2 = [1,2,3,4,5];
 console.log(arr.slice(2,3), arr); //outputs sliced part [3], arr remains same
 
-//push, unshift & pop, shift
-[1,2,3,4,5].push(100); //output = 6 (length of final array = [1,2,3,4,5,100])
-[1,2,3,4,5,100].unshift(30); //output = 6 (length of final array = [30,1,2,3,4,5,100])
-
-[30,1,2,3,4,5,100].pop(); //output = 100 final array = [30,1,2,3,4,5]
-[30,1,2,3,4,5].shift(); //output = 30 final array = [1,2,3,4,5]
-
-
-//Array.from
-console.log("================", "Array.from");
-var someNumbers = Array.from({length: 10}, (v,i) => i);
-var nameLetters = Array.from("animesh"); //can also get array from Set, Map
-console.log(someNumbers, nameLetters);
-
-//Array.isArray
-console.log("================", "Array.isArray");
-console.log(Array.isArray(someNumbers));//true
-console.log(Array.isArray({"0": "abc"}));//false
-console.log(Array.isArray({0: "abc"}));//false
-console.log(Array.isArray(["abc"]));//true
 
 ```
