@@ -34,7 +34,7 @@ function Person(){
 var p = new Person();
 ```
 
-> arrow functions don't have `arguments` variable, and they can't be used as constructors using the new operator
+> arrow functions don't have `arguments` variable, and they can't be used as constructors using the new operator, and they also don't have `prototype` property.
 
 > When invoked through `call` or `apply` only arguments are passed and no `thisObject` is passed as the first parameter
 
