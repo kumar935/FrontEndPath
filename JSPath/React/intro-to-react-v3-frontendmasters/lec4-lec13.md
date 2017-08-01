@@ -62,3 +62,9 @@ I'm not sure whether webpack does it always, or requires some extra params for i
 In the .babelrc file, he talks about `loose: true`. So in transpiling some of the functionalities to ES5, or whatever version the browser understands, many times to cover the edge cases the code becomes very large. So if you're like I'm not going to be using those edge cases, you say `loose: true`, then your final bundle would be smaller.
 
 He also talks about `module: false` which is basically telling babel to not transpile the `import x from './xyz'` commands so so that Webpack 2 (not webpack 1) can utilize the static imports (not dynamic imports because you can't have variables instead of the file names when using import keywords), to have the tree shaking feature, or live code inclusion that is new in Webpack 2.
+
+## Running Webpack from npm
+
+Only new thing was the mention of `eslintignore` which I don't think I used.
+
+
