@@ -1,5 +1,7 @@
 ### Intro
 
+Nothing too special
+
 ### Yarn
 
 Yarn seems simpler and better. But can't pinpoint the exact difference in how it gets flat dependencies.
