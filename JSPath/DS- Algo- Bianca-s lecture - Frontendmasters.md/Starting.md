@@ -97,6 +97,128 @@ var myWeeklyMenu = new Stack();
 
 myWeeklyMenu.push("RedBeans");
 
+
+
+
+
+//==============================================
+
+
+
+function Queue(capacity) {
+	capacity = capacity ? capacity : 0;
+	this.storage = {};
+	this.capacity = capacity;
+	this.count = 0;
+	for(var i=0; i<capacity; i++){
+		this.storage[i] = undefined;
+	}
+}
+
+Queue.prototype.enqueue = function(value) {
+	if(this.count === this.capacity){
+		alert("nope");
+		return;
+	}
+ 	for(var i=0; i<this.capacity; i++){
+ 		if(this.storage[i] === undefined){
+ 			this.storage[i] = value;
+ 			this.count++;
+ 			break;
+ 		}
+ 	}
+};
+// Time complexity:
+
+Queue.prototype.dequeue = function() {
+  	for(var i=0; i<this.capacity-1; i++){
+  		this.storage[i] = this.storage[i+1]
+  	}
+  	this.count--;
+  	this.storage[this.capacity-1] = undefined;
+};
+// Time complexity:
+
+Queue.prototype.peek = function() {
+ 	return this.storage[0];
+};
+
+Queue.prototype.count = function() {
+ 	return this.count;
+};
+
+Queue.prototype.contains = function(val){
+	for(var i=0; i<this.capacity; i++){
+		if(this.storage[i] === val){
+			return true;
+		}
+	}
+	return false;
+}
+
+Queue.prototype.until = function(val){
+	for(var i=0; i<this.capacity; i++){
+		if(this.storage[i] === val){
+			return i;
+		}
+	}
+	return "nope";
+}
+
+
+//==== MY SOLUTION, but it like creates an object with items having undefined as values. We don't want that I guess. Trying the right solution below:
+
+function Queue(capacity){
+	this._capacity = capacity || Infinity;
+	this._storage = {};
+	this._tail = 0;
+	this._head = 0;
+}
+
+Queue.prototype.enqueue = function(val){
+	if(this.count() < this._capacity){
+		this._storage[this._tail++] = val;	
+	} else {
+		return "Max capacity reached";
+	}
+}
+
+Queue.prototype.peek = function() {
+ 	return this.storage[this._head];
+};
+
+Queue.prototype.contains = function(val){
+	for(var i=this._head; i<this._tail; i++){
+		if(this._storage[i] === val){
+			return true;
+		}
+	}
+	return false;
+}
+
+Queue.prototype.dequeue = function(){
+	if(this._head < this._tail){
+		delete this._storage[this._head++]	
+	} else {
+		return "Empty storage";
+	}
+}
+
+Queue.prototype.until = function(val){
+	for(var i=this._head; i<this._tail; i++){
+		if(this._storage[i] === val){
+			return i-this._head;
+		}
+	}
+	return "does not exist in storage";
+}
+
+Queue.prototype.count = function(){
+	return this._tail - this._head;
+}
+
+
+
 ```
 
 
