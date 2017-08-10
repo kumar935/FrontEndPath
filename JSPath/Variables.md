@@ -109,3 +109,27 @@ console.log(i); // 10
 - Mark and sweep and reference counting methods. Pretty interesting to know but don't seem all that useful for practical purposes.
 
 
+---
+
+### APART FROM THE BOOK
+
+#### using delete keyword
+
+```javascript
+var x = {
+  "hi": 5,
+  "hello": {
+    "something": 6
+  }
+};
+y = x.hi;
+z = x.hello;
+delete x.hi;
+delete x.hello;
+console.log(y); // 5
+console.log(z); // {"hello": {...}}
+```
+
+So delete removes that item from the object whether it is a primitive or a reference, but does not like make it disappear. 
+
+
