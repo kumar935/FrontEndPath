@@ -12,7 +12,7 @@ function revStr(str){
 				swap(strArr, i, wall-1);
 			}
 			wall--;
-    }
+		}
 	}
 	return strArr.join("");
 }
