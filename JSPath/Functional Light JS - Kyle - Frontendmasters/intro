@@ -1,0 +1,59 @@
+## Intro
+
+## Functional Programming: Imperative vs Declarative
+
+Imperative
+- how to accomplish a task. Literally doing what we're telling it to do , like 0s and 1s, in machine language
+- Computer is better at reading it
+- Directly tell what to do, the HOW
+
+Declarative
+- Layers of abstraction over the Imperative literal instructions.
+- We're better at reading it
+- Tell the framework what we want, framework figures out how to do it, the WHAT
+
+
+## Provable And Readable
+
+- The parts of code that are done using the proved and trusted way don't need to be re-read.
+- Basically no need to re-invent the wheel if it has been done using a trusted way.
+
+__Abstraction__: Abstraction is not hiding details. That's encapsulation. Something in the lines of creating semantic boundaries between intertwined pieces. Not entirely clear.
+
+## Functions
+
+```javascript
+
+function foo(x,y,z,w){
+  console.log(x,y,z,w);
+}
+
+function bar(x=2, ...args){
+  return foo(x,42, ...args);
+}
+
+bar();
+bar(3,8,11);
+bar(...[6,5]);
+```
+
+Is foo a function? Nope.
+Is bar a function? Kinda. But nope. Gotta be turtles all the way down.
+
+- Arbitrary collection of operations = PROCEDURES.
+- All functions are procedures, but all procedures are not functions.
+
+```javascript
+function foo(x,y){
+  return [x+1, y-1];
+}
+
+``` 
+
+A function must have a return keyword. Otherwise it's a procedure. Not just arbitrary return. It has to return a value.
+
+
+
+
+
+
