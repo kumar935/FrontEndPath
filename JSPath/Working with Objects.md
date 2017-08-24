@@ -66,6 +66,16 @@ __Configurable__: If false, any attempts to delete the property or change its at
 __Enumerable__: If true, the property will be iterated over when a user does for (var prop in obj){} (or similar).
 
 
+## Object.assign
+
+[MDN Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
+- Calls the getter on the source object, and setter on the destination object.
+- Bad for deep copying.
+
+
+
+
 
 
 
