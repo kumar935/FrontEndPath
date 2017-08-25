@@ -62,6 +62,10 @@ Perf.start();
 // ^ Inclusive and exclusive of lifecycle methods.
 ```
 
+## Q & A Defining Components & more | 59
+
+- ES6 class vs stateless components
+- Context vs Props: Context is available everywhere. Experimental api. Best not use it. Libraries might use it, but as devs might just use state/props to do something.
 
 
 
