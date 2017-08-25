@@ -40,6 +40,28 @@ Load the thing without API first.. Then do the API request. Render first, then d
 
 ## React perf tools | 58
 
+```javascript
+shouldComponentUpdate() {
+  return false;
+}
+
+shouldComponentUpdate(nextProps){
+  return this.props.rating !== nextProps.rating
+}
+```
+Might want to do this if there's no state/props change. But it might be dangerous to do it. Only do this when clearly needed. Don't prematurely optimize.
+
+For checking performance:
+```javascript
+import Perf from 'react-addons-perf'
+window.Perf = Perf;
+Perf.start();
+// then run Perf.stop() and Perf.printWasted() to get a report kind of on how much time wasted on render
+// There's also Perf.printInclusive();
+// also Perf.printExclusive()
+// ^ Inclusive and exclusive of lifecycle methods.
+```
+
 
 
 
